@@ -1,6 +1,6 @@
 {
   "name": "typescript-ratchet",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "packageManager": "pnpm@10.7.0",
   "keywords": [
     "cli",
@@ -14,6 +14,10 @@
   ],
   "bin": {
     "typescript-ratchet": "dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/linotte-technology/typescript-ratchet.git"
   },
   "scripts": {
     "clean": "rimraf dist",
