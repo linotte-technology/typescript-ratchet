@@ -17,7 +17,7 @@
   },
   "scripts": {
     "clean": "rimraf dist",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "tsc --noEmit --resolveJsonModule",
     "build": "tsup",
     "start": "dist/index.js",
     "dev": "pnpm run clean && pnpm run build && pnpm run start"
