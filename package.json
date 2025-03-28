@@ -1,0 +1,42 @@
+{
+  "name": "typescript-ratchet",
+  "version": "0.0.2",
+  "packageManager": "pnpm@10.7.0",
+  "keywords": [
+    "cli",
+    "typescript",
+    "ratchet",
+    "codemod"
+  ],
+  "homepage": "https://github.com/linotte-technology/typescript-ratchet",
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "typescript-ratchet": "dist/index.js"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "typecheck": "tsc --noEmit",
+    "build": "tsup",
+    "start": "dist/index.js",
+    "dev": "pnpm run clean && pnpm run build && pnpm run start"
+  },
+  "author": "Linotte Technology",
+  "license": "MIT",
+  "description": "TypeScript Ratchet Codemods to add @ts-expect-error above tsc reported issues.",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^13.1.0",
+    "inquirer": "^12.5.0",
+    "jscodeshift": "^17.3.0",
+    "ts-morph": "^25.0.1",
+    "typescript": "^5.8.2"
+  },
+  "devDependencies": {
+    "@types/jscodeshift": "^0.12.0",
+    "@types/node": "^22.13.14",
+    "rimraf": "^6.0.1",
+    "tsup": "^8.4.0"
+  }
+}
